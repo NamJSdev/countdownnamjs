@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background: rgb(247, 161, 161) url(./images/2.png) top center / cover no-repeat;
+}
+body{
+    font-size:1.6em;background:transparent;color:#ffffff;font-family: 'Dancing Script',Helvetica,Arial,sans-serif; background-size: cover;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    height: 65px;
+    width: 50%;
+    background-color: red;
+    border-radius: 2%;
+}
+.header h1{
+    text-align: center;
+}
+.main__content{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__content h2{
+    font-size: 55px;
+    color: rgb(229, 245, 11);
+}
+.main__content .clock__dow{
+    display: flex;
+    margin: 50px 0;
+}
+.clock__dow .clock__item{
+    margin: 25px 25px;
+    width: 150px;
+    height: 200px;
+    border-radius: 30%;
+}
+.clock__item .clock__number{
+    background-color: #ffffffd7;
+    width: 100%;
+    height: 55%;
+    color: black;
+    font-size: 55px;
+    font-weight: bold;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+.clock__item .clock__text{
+    color: black;
+    width: 100%;
+    height: 45%;
+    font-size: 45px;
+    font-weight: bold;
+    background-color: rgb(229, 245, 11);
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
+}
+.clock__number, .clock__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media( max-width:767px){
+    html{
+        background: url(./images/new.png) top center / cover repeat;
+    }
+    .main{
+        width: 100%;
+    }
+    .header{
+        height: 65px;
+        width: 100%;
+        background-color: rgba(255, 0, 0, 0.555);
+        border-radius: 0%;
+        right: 0;
+        left: 0;
+    }
+    .header h1{
+        text-align: center;
+        font-size: 20pt;
+        line-height: 65px;
+    }
+    .main__content{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__content h2{
+        font-weight: bolder;
+        font-size: 25px;
+        color: rgb(255, 0, 0);
+        background-color: rgba(229, 255, 0, 0.918);
+        border-radius: 2%;
+        padding: 12px 15px;
+    }
+    .main__content h2:first-child{
+        border-radius: 2%;
+    }
+    .main__content h2:last-child{
+        border-radius: 47%;
+    }
+    .main__content .clock__dow{
+        display: flex;
+        margin: 70px 0;
+        flex-wrap: wrap
+    }
+    .clock__dow .clock__item {
+        margin: 15px 25px;
+        width: 36%;
+        height: 149px;
+        border-radius: 30%;
+    }
+}
